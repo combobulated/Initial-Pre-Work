@@ -1,0 +1,44 @@
+<!-- Use HTML5 to Require a Field -->
+
+<!--
+Text input field attribute: required
+
+"You can require specific form fields so that your user will not be able to
+submit your form until he or she has filled them out." FreeCodeCamp
+
+To make a required text input field,
+* add the attribute required within your input element,
+
+ *for exmaple: <input type="text" required>
+ * below, "required" is appended to the "input" element's attributes
+  -->
+
+  <h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+
+  <!-- input text on form must be entered before press of
+  button. Here, we add required to input attributes -->
+
+  <form action="/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+
+
+  </form>
+</main>
