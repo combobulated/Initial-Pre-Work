@@ -1,3 +1,73 @@
-/* Please remember to include a summary statement with EACH FILE regarding what you learned from the lesson in this format!  I recommend keeping it at the top of each file for faster processing of your application.*/
 
-/* Copy your code from the central panel of the freeCodeCamp page and paste it below after successfully passing the test.  You will have to click on the X at the top right of the modal that pops up to see the code. If you forget, just rerun the test.  You are also welcome to download your solution. */
+<!-- preamble about CSS -->
+
+<!-- <!--Cascading Style Sheets (CSS) -->
+<!--
+* tells the browser how to display the text and other content written in HTML.
+* is case-sensitive so be careful with your capitalization.
+* CSS has been adopted by all major browsers
+  and allows you to control:
+
+color
+fonts
+positioning
+spacing
+sizing
+decorations
+transitions
+
+* three main ways to apply CSS styling.
+* inline styles directly to HTML elements with the style attribute.
+* place CSS rules within style tags in an HTML document.
+* Most prominantly, write CSS rules in an external style sheet, then reference
+      the file in the HTML document.
+* The style sheet are separate from the HTML elements.
+      -improves the readability and reusability of your code.
+      - a selector is used to target an HTML element in the DOM (Document Object Model)
+           then apply a variety of attributes to that element to change the way it
+           is displayed on the page.
+-->
+
+      <!--   Change theColor of Text -->
+<!--
+* changing the style of the h2 element.
+* with the "color" style property
+* Example: change h2 element's text color to blue:
+
+<h2 style="color: blue;">CatPhotoApp</h2>
+
+* end inline style declarations with a ;
+
+
+-->
+<h2 style="color: red;">CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+
+  <div>
+    <p>Things cats love:</p>
+    <ul>
+      <li>cat nip</li>
+      <li>laser pointers</li>
+      <li>lasagna</li>
+    </ul>
+    <p>Top 3 things cats hate:</p>
+    <ol>
+      <li>flea treatment</li>
+      <li>thunder</li>
+      <li>other cats</li>
+    </ol>
+  </div>
+
+  <form action="/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</main>
