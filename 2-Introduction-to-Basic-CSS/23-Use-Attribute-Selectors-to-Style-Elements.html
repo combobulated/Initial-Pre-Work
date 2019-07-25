@@ -1,0 +1,67 @@
+<!-- Use Attribute Selectors to Style Elements -->
+
+<!--
+
+ In addition to ID and class selectors, CSS has a type selector.
+
+Allow the selection of  custom groups
+of elements to style.
+
+
+----
+Use CatPhotoApp again to practice using CSS Selectors.
+
+For this challenge, you will use the [attr=value] attribute selector
+to style the checkboxes in CatPhotoApp. This selector matches and styles
+ elements with a specific attribute value.
+
+For example, the below code changes
+the margins of all elements with the attribute type and a corresponding
+value of radio:
+
+[type='radio'] {
+  margin: 20px 0px 20px 0px;
+}
+
+
+----- Assignment ---
+
+Using the type attribute selector, try to give the checkboxes
+in CatPhotoApp a top margin of 10px and a bottom margin of 15px.
+
+----- Commits -----
+
+Add top and bottom margin to the checkbox
+
+Use the CSS attribute selecor [type='checkbox'] to set margins
+of checkboxes to top = 10px and bottom = 15px
+
+-->
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+
+[type='checkbox'] {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
