@@ -1,0 +1,63 @@
+<!-- Override Styles in Subsequent CSS -->
+
+<!--
+
+* what can we do to override our
+ pink-text class?
+
+ **** the order of the class declarations in
+       the <style> section are what is important.
+       The second declaration will always take precedence
+       over the first. Because .blue-text is declared second,
+        it overrides the attributes of .pink-text
+
+---- Assignment ----
+1) reate an additional CSS class called blue-text that gives an element
+the color blue.
+
+2) Make sure it's below your pink-text class declaration.
+
+3) Apply the blue-text class to your h1 element in addition to
+your pink-text class, and let's see which one wins.
+
+* Applying multiple class attributes to a HTML element is done with
+  a space between them like this:
+
+      class="class1 class2"
+
+* Note: It doesn't matter which order the classes are
+  listed in the HTML element.
+
+**** the order of the class declarations in
+      the <style> section are what is important.
+      The second declaration will always take precedence
+      over the first. Because .blue-text is declared second,
+       it overrides the attributes of .pink-text
+
+------ Commits ------
+
+Override pink text with blue text
+
+This commit demonstrates how the order of the classes
+defined in the style section determine the override
+priority of class. Bottom position in the style
+section overrides the top positions. This example
+shows blue-text overriding pink text in the h1 header
+
+  -->
+  <style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  .pink-text {
+    color: pink;
+  }
+
+.blue-text {
+  color: blue
+}
+
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
