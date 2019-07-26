@@ -1,0 +1,57 @@
+<!-- Override All Other Styles by using Important -->
+
+<!--
+* inline styles will override all the CSS declarations in your style element.
+
+* There's one last way to override CSS.
+* This is the most powerful method of all.
+
+ * why you would ever want to override CSS?.
+
+ CSS libraries may accidentally override your own CSS.
+
+ Use !important to be sure an element has specific CSS,
+
+
+
+---- Assigment ---
+
+Let's go all the way back to our pink-text class declaration.
+Remember that our pink-text class was overridden by subsequent class
+declarations, id declarations, and inline styles.
+
+1) add the keyword !important to your pink-text element's color declaration
+   to make 100% sure that your h1 element will be pink.
+
+An example of how to do this is:
+
+color: red !important;
+
+
+--- Commits ----
+
+Fix color to Pink using "!Important"
+
+To insure no other CSS class overides our pink-text class, This commit
+adds one word !important to the pink-text: ie color: pink !important;
+Hello World will remain pink.  No ID Declaration or future CSS library
+will override the color attribute.
+
+-->
+<style>
+  body {
+    background-color: black;
+    font-family: monospace;
+    color: green;
+  }
+  #orange-text {
+    color: orange;
+  }
+  .pink-text {
+    color: pink !important;
+  }
+  .blue-text {
+    color: blue;
+  }
+</style>
+<h1 id="orange-text" class="pink-text blue-text" style="color: white">Hello World!</h1>
