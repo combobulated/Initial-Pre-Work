@@ -1,0 +1,59 @@
+<!-- 3 Use the flex-direction Property to Make a Row -->
+
+* Flex Containers
+
+* Adding "display: flex" to an element turns it into a flex container.
+
+ - we can now align any children of that element into rows or columns.
+
+
+* Add the flex-direction property to the parent item
+  and setting it to row or column.
+
+  - Creating a row will align the children horizontally,
+  - Creating a column will align the children vertically.
+
+* Other options for flex-direction:
+  - row-reverse and
+  - column-reverse.
+
+* The default value for the flex-direction property is row.
+
+---- Assignment ----
+Add the CSS property flex-direction to the #box-container element,
+and give it a value of row-reverse.
+
+--- Commits ---
+
+Demonstrate flex-direction property on box-container.
+
+Adding to #box-container the property flex-direction: row-reverse
+results in blue box position to right of red box, as expected.
+The default was blue, then red, in horizontal row.
+
+
+-->
+<style>
+  #box-container {
+    flex-direction: row-reverse;
+    display: flex;
+    height: 500px;
+
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+  }
+</style>
+
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
