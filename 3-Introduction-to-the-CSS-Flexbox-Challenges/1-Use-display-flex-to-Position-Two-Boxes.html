@@ -1,0 +1,49 @@
+<!-- 1 Use display: flex to Position Two Boxes -->
+
+
+<!--   Flexbox allows a website to adapt its size to various
+       browser sizes
+
+ First challenge will explain theory.
+
+Placing the CSS property "display: flex;" on an element allows you to
+use other flex properties to build a responsive page.
+
+------- Assignment -----
+
+Add the CSS property display to #box-container and set its value to flex.
+
+--- Commits ---
+Allow box container to resize to browser via flex
+
+Set #box-container "display" prop to a value of "flex."
+ie display: flex;  The box-container area will now expand
+or contract to fit the browser.
+-->
+
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+
+  }
+
+  #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+
+  }
+</style>
+<div id="box-container">
+  <div id="box-1"></div>
+  <div id="box-2"></div>
+</div>
