@@ -12,12 +12,12 @@
 Make the element with the item5 class consume the last two rows.
 
 --- Commits ---
-
 Spread item5 across last two rows of the grid
 
 This commit uses property grid-row: 2 4; in item5 class
 to inform item5 to "consume" or spread across row edges
 2,3 and 4.
+
 
 ---------------
 <style>
@@ -29,9 +29,10 @@ to inform item5 to "consume" or spread across row edges
   .item5 {
     background: PaleGreen;
     grid-column: 2 / 4;
-    /* add your code below this line */
 
+    /* add your code below this line */
     grid-row: 2 / 4;
+
     /* add your code above this line */
   }
 
