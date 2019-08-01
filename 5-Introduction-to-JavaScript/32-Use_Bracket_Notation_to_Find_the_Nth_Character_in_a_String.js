@@ -18,7 +18,7 @@ stuck.
 
 Fetch a letter from a string with bracket notation
 
-Assign to var thirdLetterOfLastName the third letter
+Assign to thirdLetterOfLastName the third letter
  of string "lastName" using lastName[2];
 
 ---------*/
