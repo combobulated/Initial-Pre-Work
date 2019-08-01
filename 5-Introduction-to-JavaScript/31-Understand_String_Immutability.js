@@ -26,3 +26,7 @@ Removes incorrect code that attempts to change and immutable string.
 Rather, replaces myStr contents with an entire new string.
 
  -------
+
+ var myStr = "Jello World";
+
+ myStr = "Hello World";
