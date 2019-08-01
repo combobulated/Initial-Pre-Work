@@ -1,5 +1,6 @@
 // 31 Understand String Immutability   source: free.codecamp.org
-
+/*
+"strings are immutable"
 In JavaScript, String values are immutable, which means that they cannot
 be altered once created.
 
@@ -25,7 +26,7 @@ Change myStr from Jello World to Hello World
 Removes incorrect code that attempts to change and immutable string.
 Rather, replaces myStr contents with an entire new string.
 
- -------
+ -------*/
 
  var myStr = "Jello World";
 
