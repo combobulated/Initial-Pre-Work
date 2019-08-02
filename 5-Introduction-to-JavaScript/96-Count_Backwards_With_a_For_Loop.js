@@ -30,7 +30,7 @@ Changes initialization and final-expression to count
  backward by twos by odd numbers.
 Pushes the odd numbers from 9 through 1 to myArray using a for loop.
 
-----------------*
+----------------*/
 
 for (var i = 10; i > 0; i -= 2) {
   ourArray.push(i);
