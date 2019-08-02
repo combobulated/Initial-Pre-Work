@@ -27,7 +27,7 @@ Add greater than operator
 Adds the greater than operator to the indicated lines so that the
 return statements make sense.
 
---------------*
+--------------*/
 function testGreaterThan(val) {
   if (val > 100) {  // Change this line
     return "Over 100";
