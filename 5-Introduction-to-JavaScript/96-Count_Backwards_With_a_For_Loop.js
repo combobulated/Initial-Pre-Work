@@ -1,52 +1,38 @@
-// 96 Iterate with JavaScript For Loops
+// 96 Count Backwards With a For Loop
 // source: learn.freecodecamp.org
+/* iterate backwards with for loopo
 
-/* " for loop to execute code multiple times"
+A for loop can also count backwards, so long as we can define the
+right conditions.
 
-You can run the same code multiple times by using a loop.
+In order to count backwards by twos, we'll need to change our
+initialization, condition, and final-expression.
 
-The most common type of JavaScript loop is called a "for loop" because it runs
- "for" a specific number of times.
-
-For loops are declared with three optional expressions separated by semicolons:
-
-for ([initialization]; [condition]; [final-expression])
-
-The initialization statement is executed one time only before the loop starts.
- It is typically used to define and setup your loop variable.
-
-The condition statement is evaluated at the beginning of every loop iteration
-and will continue as long as it evaluates to true. When condition is false at
-the start of the iteration, the loop will stop executing. This means if condition
-starts as false, your loop will never execute.
-
-The final-expression is executed at the end of each loop iteration,
-prior to the next condition check and is usually used to increment or
-decrement your loop counter.
-
-In the following example we initialize with i = 0 and iterate
-while our condition i < 5 is true. We'll increment i by 1 in each
-loop iteration with i++ as our final-expression.
+We'll start at i = 10 and loop while i > 0. We'll decrement i by 2
+each loop with i -= 2.
 
 var ourArray = [];
-for (var i = 0; i < 5; i++) {
+for (var i=10; i > 0; i-=2) {
   ourArray.push(i);
 }
-ourArray will now contain [0,1,2,3,4].
+ourArray will now contain [10,8,6,4,2].
 
----- Assignment --------
-Use a for loop to work to push the values 1 through 5 onto myArray.
+----- Assignment --
+Let's change our initialization and final-expression so we can count
+ backward by twos by odd numbers.
 
------Commits -----------
-Use  for loop to execute code multiple times
+Push the odd numbers from 9 through 1 to myArray using a for loop.
 
-Uses a for loop to push the values 1 through 5 onto myArray
+--- Commits ---
+Iterate backwards with for loop
 
-----------------------*/
-// Example
-var ourArray = [];
+Changes initialization and final-expression to count
+ backward by twos by odd numbers.
+Pushes the odd numbers from 9 through 1 to myArray using a for loop.
 
-for (var i = 0; i < 5; i++) {
+----------------*
+
+for (var i = 10; i > 0; i -= 2) {
   ourArray.push(i);
 }
 
@@ -55,7 +41,6 @@ var myArray = [];
 
 // Only change code below this line.
 
-for (var i = 1; i<6; i++ ) {
-
-    myArray.push(i);
+for (var i = 9; i > 0; i-=2 ){
+  myArray.push(i);
 }
