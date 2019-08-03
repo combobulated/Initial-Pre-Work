@@ -56,4 +56,4 @@ Limited only by computers memory and hardware resources
 
 ## How many instances of the databases connected to the server application are created?
 
-put your answer here
+Limited only by computers memory and hardware resources
