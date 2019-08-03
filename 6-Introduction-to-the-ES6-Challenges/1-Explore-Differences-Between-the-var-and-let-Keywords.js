@@ -1,7 +1,7 @@
 // 1 Explore Differences Between the var and let Keywords
 // source: freecodecamp.org
 
-/*  Use Let inplace of Var to prevent overwriting
+/*  Use Let inplace of Var to prevent overwriting (var does not exist)
 
 One of the biggest problems with declaring variables with the var keyword
 is that you can overwrite variable declarations without an error.
@@ -41,3 +41,22 @@ x = 3.14; // throws an error because x is not declared
 
 ---- Assignment ---
 Update the code so it only uses the let keyword.
+
+---- Commits ----
+
+replace var with Let
+
+EC6 does not permit var.  let prevents others from overwriting the variables
+
+--------*/
+
+let catName;
+let quote;
+function catTalk() {
+  "use strict";
+
+  catName = "Oliver";
+  quote = catName + " says Meow!";
+
+}
+catTalk();
